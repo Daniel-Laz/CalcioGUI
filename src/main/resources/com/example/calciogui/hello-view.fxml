@@ -4,11 +4,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="247.0" prefWidth="502.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calciogui.HelloController">
+<VBox alignment="CENTER" prefHeight="301.0" prefWidth="502.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calciogui.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <HBox prefHeight="25.0" prefWidth="322.0">
+   <Label prefHeight="118.0" prefWidth="399.0" text="1. aggiunta giocatore&#10;2. visualizza squadra&#10;3. modifica giocatore&#10;4. cancella giocatore&#10;5. visualizza giocatori con &gt; 5 goal&#10;6. visualizza capitano - se non ci sono capitani ne assegna uno casualmente" />
+   <HBox prefHeight="25.0" prefWidth="334.0">
       <children>
          <Button fx:id="first" mnemonicParsing="false" onAction="#first" text="1" />
          <Button fx:id="second" mnemonicParsing="false" onAction="#second" text="2" />
@@ -16,10 +17,16 @@
          <Button mnemonicParsing="false" text="4" />
          <Button mnemonicParsing="false" text="5" />
          <Button mnemonicParsing="false" text="6" />
-         <Button fx:id="enter" mnemonicParsing="false" text="Enter" />
+         <Button fx:id="enter" mnemonicParsing="false" onAction="#enter" text="Enter" />
       </children>
    </HBox>
-   <TextField fx:id="input" />
+   <HBox prefHeight="36.0" prefWidth="462.0">
+      <children>
+         <TextField fx:id="nome" prefHeight="25.0" prefWidth="192.0" />
+         <TextField fx:id="goal" prefHeight="25.0" prefWidth="178.0" />
+         <CheckBox fx:id="capitano" mnemonicParsing="false" text="capitano" />
+      </children>
+   </HBox>
 
-    <Label fx:id="output" prefHeight="62.0" prefWidth="481.0" />
+    <Label fx:id="output" prefHeight="67.0" prefWidth="462.0" />
 </VBox>
