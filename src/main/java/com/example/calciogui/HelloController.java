@@ -39,8 +39,5 @@ public class HelloController {
             output.setText("giocatore non aggiunto - è già presente un capitano");
         }
     }
-    @FXML
-    protected String enter() {
-        return output.getText();
-    }
+
 }

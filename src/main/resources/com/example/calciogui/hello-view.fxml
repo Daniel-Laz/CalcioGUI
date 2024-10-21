@@ -17,7 +17,6 @@
          <Button mnemonicParsing="false" text="4" />
          <Button mnemonicParsing="false" text="5" />
          <Button mnemonicParsing="false" text="6" />
-         <Button fx:id="enter" mnemonicParsing="false" onAction="#enter" text="Enter" />
       </children>
    </HBox>
    <HBox prefHeight="36.0" prefWidth="462.0">
