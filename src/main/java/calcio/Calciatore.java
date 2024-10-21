@@ -7,6 +7,18 @@ public class Calciatore {
     private int goal;
     private boolean capitano;
 
+    public String toString(){
+        return name+", "+goal+", "+capitano;
+    }
+
+    public boolean equals(Calciatore c){
+        if(this.name.equals(c.name) && this.goal == c.goal && this.capitano == c.capitano){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     // metodi get
     public String getName(){
         return name;

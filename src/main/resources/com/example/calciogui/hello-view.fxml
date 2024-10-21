@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.collections.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -10,18 +8,17 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <ChoiceBox prefWidth="150.0" fx:id="choice">
-       <items>
-           <FXCollections fx:factory="observableArrayList">
-               <String fx:value="aggiungi giocatore" />
-               <String fx:value="visualizza squadra" />
-               <String fx:value="modifica giocatore" />
-               <String fx:value="edit giocatore" />
-               <String fx:value="giocatori > 5 goal" />
-               <String fx:value="visualizza capitano" />
-           </FXCollections>
-       </items>
-   </ChoiceBox>
+   <HBox prefHeight="25.0" prefWidth="322.0">
+      <children>
+         <Button fx:id="first" mnemonicParsing="false" onAction="#first" text="1" />
+         <Button fx:id="second" mnemonicParsing="false" onAction="#second" text="2" />
+         <Button mnemonicParsing="false" text="3" />
+         <Button mnemonicParsing="false" text="4" />
+         <Button mnemonicParsing="false" text="5" />
+         <Button mnemonicParsing="false" text="6" />
+         <Button fx:id="enter" mnemonicParsing="false" text="Enter" />
+      </children>
+   </HBox>
    <TextField fx:id="input" />
 
     <Label fx:id="output" prefHeight="62.0" prefWidth="481.0" />
