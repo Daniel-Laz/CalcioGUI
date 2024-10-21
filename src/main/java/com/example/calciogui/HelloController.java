@@ -24,6 +24,9 @@ public class HelloController {
     private Button second;
     @FXML
     private Button first;
+    @FXML
+    private Button third;
+
 
     @FXML
     protected void second() {
@@ -37,6 +40,16 @@ public class HelloController {
             output.setText("giocatore aggiunto");
         } else {
             output.setText("giocatore non aggiunto - è già presente un capitano");
+        }
+    }
+    @FXML
+    protected void third() {
+        output.setText(squadra.printSquadra());
+
+        if (squadra.editGiocatore(nome.getText(), nome.getText(), Integer.parseInt(goal.getText()), capitano.isSelected())) {
+            output.setText("giocatore modificato");
+        } else {
+            output.setText("giocatore non presente");
         }
     }
 
