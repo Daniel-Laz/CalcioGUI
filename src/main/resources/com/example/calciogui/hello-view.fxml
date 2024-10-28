@@ -14,9 +14,9 @@
          <Button fx:id="first" mnemonicParsing="false" onAction="#first" text="1" />
          <Button fx:id="second" mnemonicParsing="false" onAction="#second" text="2" />
          <Button fx:id="third" mnemonicParsing="false" onAction="#third" text="3" />
-         <Button mnemonicParsing="false" text="4" />
-         <Button mnemonicParsing="false" text="5" />
-         <Button mnemonicParsing="false" text="6" />
+         <Button fx:id="fourth" mnemonicParsing="false" onAction="#fourth" text="4" />
+         <Button fx:id="fifth" mnemonicParsing="false" onAction="#fifth" text="5" />
+         <Button fx:id="sixth" mnemonicParsing="false" onAction="#sixth" text="6" />
       </children>
    </HBox>
    <HBox prefHeight="36.0" prefWidth="462.0">
