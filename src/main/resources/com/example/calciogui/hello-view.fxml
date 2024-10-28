@@ -26,6 +26,5 @@
          <CheckBox fx:id="capitano" mnemonicParsing="false" text="capitano" />
       </children>
    </HBox>
-
-    <Label fx:id="output" alignment="TOP_LEFT" prefHeight="258.0" prefWidth="462.0" />
+   <TextArea fx:id="output" prefHeight="286.0" prefWidth="462.0" />
 </VBox>

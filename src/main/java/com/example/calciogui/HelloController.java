@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextArea;
 import calcio.Calciatore;
 import calcio.Squadra;
 
@@ -17,7 +18,7 @@ public class HelloController {
     @FXML
     private CheckBox capitano;
     @FXML
-    private Label output;
+    private TextArea output;
     @FXML
     private Button second;
     @FXML
