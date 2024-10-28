@@ -36,7 +36,7 @@ public class HelloController {
         if (squadra.addCalciatore(nome.getText(), Integer.parseInt(goal.getText()), capitano.isSelected())) {
             output.setText("giocatore aggiunto");
         } else {
-            output.setText("giocatore non aggiunto - è già presente un capitano");
+            output.setText("giocatore non aggiunto: è già presente un capitano");
         }
     }
 
