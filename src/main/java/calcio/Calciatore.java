@@ -7,10 +7,6 @@ public class Calciatore {
     private int goal;
     private boolean capitano;
 
-    public String toString(){
-        return name+", "+goal+", "+capitano;
-    }
-
     public boolean equals(Calciatore c){
         if(this.name.equals(c.name) && this.goal == c.goal && this.capitano == c.capitano){
             return true;
@@ -64,6 +60,15 @@ public class Calciatore {
         setGoal(goal);
         this.capitano = capitano;
     }
+    public String toString(){
+        if (capitano==true){
+            return "nome: "+name+" goal: "+goal+" - è capitano";
+        }else{
+            return "nome: "+name+" goal: "+goal;
+        }
+
+    }
+
     public Calciatore(boolean capitano){
         this.capitano = capitano;
     }

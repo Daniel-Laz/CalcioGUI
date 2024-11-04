@@ -21,7 +21,7 @@ public class Squadra {
     public String printSquadra(){
         String out="";
         for (int i = 0; i < contatore ; i++){
-            out+= calciatori[i].getName()+" goal:"+calciatori[i].getGoal()+" capitano:"+calciatori[i].isCapitano()+"\n";
+            out+= calciatori[i].toString()+"\n";
         }
         return out;
     }
