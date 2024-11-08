@@ -61,7 +61,7 @@ public class Calciatore {
         this.capitano = capitano;
     }
     public String toString(){
-        if (capitano==true){
+        if (capitano){
             return "nome: "+name+" goal: "+goal+" - è capitano";
         }else{
             return "nome: "+name+" goal: "+goal;
