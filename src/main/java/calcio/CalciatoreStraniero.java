@@ -17,9 +17,9 @@ public class CalciatoreStraniero extends Calciatore{
     public String getNazionalita(){
         return nazionalita;
     }
-    
+
     public String toString(){
-        if (super.isCapitano()==true){
+        if (super.isCapitano()){
             return "nome: "+super.getName()+" nazionalità: "+nazionalita+" goal: "+super.getGoal()+" - è capitano";
         }else{
             return "nome: "+super.getName()+" nazionalità: "+nazionalita+" goal: "+super.getGoal();
