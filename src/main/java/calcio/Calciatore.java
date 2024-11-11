@@ -62,9 +62,9 @@ public class Calciatore {
     }
     public String toString(){
         if (capitano){
-            return "nome: "+name+" goal: "+goal+" - è capitano";
+            return "nome: "+name+" - goal: "+goal+" - è capitano";
         }else{
-            return "nome: "+name+" goal: "+goal;
+            return "nome: "+name+" - goal: "+goal;
         }
 
     }

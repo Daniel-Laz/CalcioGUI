@@ -7,27 +7,27 @@ public class Squadra {
     private Calciatore[] calciatori= new Calciatore[100];
     private int contatore;
 
-    public boolean addCalciatore(String name, int goal, boolean capitano){
-        if (capitano){
+    public boolean addCalciatore(Calciatore calciatore){
+        if (calciatore.isCapitano()){
             for (int i = 0; i< contatore; i++){
                 if (calciatori[i].isCapitano()){
                     return false;
                 }
             }
         }
-        calciatori[contatore]=new Calciatore(name, goal, capitano);
+        calciatori[contatore]=calciatore;
         contatore++;
         return true;
     }
-    public boolean addCalciatore(String name, int goal, boolean capitano, String nazionalita){
-        if (capitano){
+    public boolean addCalciatore(CalciatoreStraniero calciatore){
+        if (calciatore.isCapitano()){
             for (int i = 0; i< contatore; i++){
                 if (calciatori[i].isCapitano()){
                     return false;
                 }
             }
         }
-        calciatori[contatore]=new CalciatoreStraniero(name, goal, capitano, nazionalita);
+        calciatori[contatore]=calciatore;
         contatore++;
         return true;
     }
@@ -38,19 +38,19 @@ public class Squadra {
         }
         return out;
     }
-    public boolean editGiocatore(String name, String newName, int newGoal, boolean newCapitano){
+    public boolean editGiocatore(Calciatore calciatore){
         for (int i= 0; i< contatore; i++){
-            if (name.equalsIgnoreCase(calciatori[i].getName())){
-                calciatori[i] = new Calciatore(newName,newGoal,newCapitano);
+            if (calciatore.getName().equalsIgnoreCase(calciatori[i].getName())){
+                calciatori[i] = calciatore;
                 return true;
             }
         }
         return false;
     }
-    public boolean editGiocatore(String name, String newName, int newGoal, boolean newCapitano, String nazionalita){
+    public boolean editGiocatore(CalciatoreStraniero calciatore){
         for (int i= 0; i< contatore; i++){
-            if (name.equalsIgnoreCase(calciatori[i].getName())){
-                calciatori[i] = new CalciatoreStraniero(newName,newGoal,newCapitano,nazionalita);
+            if (calciatore.getName().equalsIgnoreCase(calciatori[i].getName())){
+                calciatori[i] = calciatore;
                 return true;
             }
         }
