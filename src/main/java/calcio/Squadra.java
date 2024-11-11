@@ -3,6 +3,7 @@ package calcio;
 import java.util.Random;
 
 public class Squadra {
+
     private Calciatore[] calciatori= new Calciatore[100];
     private int contatore;
 
