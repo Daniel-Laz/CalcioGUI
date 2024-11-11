@@ -73,7 +73,6 @@ public class HelloController {
                 output.setText("giocatore non presente");
             }
         }
-
     }
 
     @FXML
