@@ -19,6 +19,18 @@ public class Squadra {
         contatore++;
         return true;
     }
+    public boolean addCalciatore(String name, int goal, boolean capitano, String nazionalita){
+        if (capitano){
+            for (int i = 0; i< contatore; i++){
+                if (calciatori[i].isCapitano()){
+                    return false;
+                }
+            }
+        }
+        calciatori[contatore]=new CalciatoreStraniero(name, goal, capitano, nazionalita);
+        contatore++;
+        return true;
+    }
     public String printSquadra(){
         String out="";
         for (int i = 0; i < contatore ; i++){
@@ -30,6 +42,15 @@ public class Squadra {
         for (int i= 0; i< contatore; i++){
             if (name.equalsIgnoreCase(calciatori[i].getName())){
                 calciatori[i] = new Calciatore(newName,newGoal,newCapitano);
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean editGiocatore(String name, String newName, int newGoal, boolean newCapitano, String nazionalita){
+        for (int i= 0; i< contatore; i++){
+            if (name.equalsIgnoreCase(calciatori[i].getName())){
+                calciatori[i] = new CalciatoreStraniero(newName,newGoal,newCapitano,nazionalita);
                 return true;
             }
         }
@@ -52,7 +73,7 @@ public class Squadra {
         String out="";
         for (int i = 0; i < contatore ; i++){
             if(calciatori[i].getGoal()>5){
-                out+= calciatori[i].getName()+" goal:"+calciatori[i].getGoal()+" capitano:"+calciatori[i].isCapitano()+"\n";
+                out+= calciatori[i].toString()+"\n";
             }
         }
         return out;
