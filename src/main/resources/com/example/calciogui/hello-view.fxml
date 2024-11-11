@@ -3,7 +3,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
@@ -13,19 +12,14 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <HBox prefHeight="238.0" prefWidth="462.0">
-      <children>
-         <Label alignment="TOP_LEFT" prefHeight="230.0" prefWidth="462.0" text="1. aggiunta giocatore&#10;2. visualizza squadra&#10;3. modifica giocatore&#10;4. cancella giocatore&#10;5. visualizza giocatori con &gt; 5 goal&#10;6. visualizza capitano - se non ci sono capitani ne assegna uno casualmente" />
-      </children>
-   </HBox>
    <HBox prefHeight="25.0" prefWidth="334.0">
       <children>
-         <Button fx:id="first" mnemonicParsing="false" onAction="#first" text="1" />
-         <Button fx:id="second" mnemonicParsing="false" onAction="#second" text="2" />
-         <Button fx:id="third" mnemonicParsing="false" onAction="#third" text="3" />
-         <Button fx:id="fourth" mnemonicParsing="false" onAction="#fourth" text="4" />
-         <Button fx:id="fifth" mnemonicParsing="false" onAction="#fifth" text="5" />
-         <Button fx:id="sixth" mnemonicParsing="false" onAction="#sixth" text="6" />
+         <Button fx:id="first" mnemonicParsing="false" onAction="#first" text="aggiungi" />
+         <Button fx:id="second" mnemonicParsing="false" onAction="#second" text="visualizza" />
+         <Button fx:id="third" mnemonicParsing="false" onAction="#third" text="modifica" />
+         <Button fx:id="fourth" mnemonicParsing="false" onAction="#fourth" text="cancella" />
+         <Button fx:id="fifth" mnemonicParsing="false" onAction="#fifth" text="&gt; 5 goal" />
+         <Button fx:id="sixth" mnemonicParsing="false" onAction="#sixth" text="capitano" />
       </children>
    </HBox>
    <HBox prefHeight="36.0" prefWidth="462.0">
